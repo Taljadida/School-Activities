@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+
+<style>
+body {
+  font-family: Arial;
+  background:#f0f2f5;
+  margin:0;
+  padding:0;
+}
+
+.page {
+  display:none;
+  min-height:100vh;
+  padding:40px 20px;
+}
+
+.active {
+  display:block;
+}
+
+.folders {
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  align-items:center;
+}
+
+.folder {
+  width:300px;
+  height:100px;
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  font-weight:bold;
+  color:white;
+  cursor:pointer;
+}
+
+.photos {background:#ff6b6b;}
+.videos {background:#6bc1ff;}
+.activities {background:#4caf50;}
+.documents {background:#ffa500;}
+
+.container {
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  max-width:700px;
+  margin:auto;
+}
+
+iframe, img {
+  width:100%;
+  border-radius:10px;
+}
+
+.back {
+  margin-top:20px;
+  display:inline-block;
+  cursor:pointer;
+  color:#007bff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- الصفحة الرئيسية -->
+<div id="home" class="page active">
+  <div class="folders">
+    <div class="folder photos" onclick="openPage('photos')">Photos</div>
+    <div class="folder videos" onclick="openPage('videos')">Videos</div>
+    <div class="folder activities" onclick="openPage('activities')">Activities</div>
+    <div class="folder documents" onclick="openPage('documents')">Documents</div>
+  </div>
+</div>
+
+<!-- Photos -->
+<div id="photos" class="page">
+  <div class="container">
+    <h2>Photos</h2>
+
+    <!-- هنا تضيفي صور Drive -->
+    <img src="https://via.placeholder.com/600x300">
+
+    <div class="back" onclick="openPage('home')">⬅ رجوع</div>
+  </div>
+</div>
+
+<!-- Videos -->
+<div id="videos" class="page">
+  <div class="container">
+    <h2>Videos</h2>
+
+    <!-- فيديو Google Drive -->
+    <iframe
+      src="https://drive.google.com/file/d/1uD6mvuJfrLMd6a-6xQNO7HeM9WmWfKgZ/preview"
+      height="400"
+      allow="autoplay">
+    </iframe>
+
+    <div class="back" onclick="openPage('home')">⬅ رجوع</div>
+  </div>
+</div>
+
+<!-- Activities -->
+<div id="activities" class="page">
+  <div class="container">
+    <h2>Activities</h2>
+    <img src="https://via.placeholder.com/600x300/4caf50/ffffff">
+    <div class="back" onclick="openPage('home')">⬅ رجوع</div>
+  </div>
+</div>
+
+<!-- Documents -->
+<div id="documents" class="page">
+  <div class="container">
+    <h2>Documents</h2>
+    <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank">
+      فتح ملف PDF
+    </a>
+    <div class="back" onclick="openPage('home')">⬅ رجوع</div>
+  </div>
+</div>
+
+<script>
+function openPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
