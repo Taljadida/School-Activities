@@ -1,7 +1,7 @@
 const data = {
   photos: [
     "photos/photo1.jpg",
-    "photos/photo2.jpg"
+    "photos/photo 1.jfif"
   ],
   videos: [
     "videos/video1.mp4"
