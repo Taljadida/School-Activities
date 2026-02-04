@@ -1,52 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>School Activities</title>
-<style>
-body { font-family: Arial; background:#f0f2f5; text-align:center; }
-.folder { padding:20px; margin:10px; background:#4caf50; color:white; font-size:22px; cursor:pointer; border-radius:10px; }
-.gallery img, .gallery video { width:90%; max-width:600px; margin:10px 0; border-radius:10px; }
-.gallery { display:none; }
-</style>
+  <meta charset="UTF-8" />
+  <title>School Activities</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<div class="folder" onclick="show('photos')">Photos</div>
-<div class="folder" onclick="show('videos')">Videos</div>
-<div class="folder" onclick="show('activities')">Activities</div>
+<h1>School Activities Gallery</h1>
 
-<div id="photos" class="gallery"></div>
-<div id="videos" class="gallery"></div>
-<div id="activities" class="gallery"></div>
+<div class="grid">
+  <div class="card activities" onclick="openFolder('activities')">
+    <h2>Activities</h2>
+  </div>
 
-<script>
-function show(id){
-  document.querySelectorAll('.gallery').forEach(g=>g.style.display='none');
-  document.getElementById(id).style.display='block';
-}
+  <div class="card events" onclick="openFolder('events')">
+    <h2>Celebrations</h2>
+  </div>
 
-const photos = ['img1.jpg','img2.jpg','img3.jpg'];
-const videos = ['vid1.mp4','vid2.mp4'];
-const activities = ['act1.jpg','act2.jpg'];
+  <div class="card awards" onclick="openFolder('awards')">
+    <h2>Awards</h2>
+  </div>
 
-photos.forEach(p=>{
-  document.getElementById('photos').innerHTML += <img src="photos/${p}">;
-});
+  <div class="card photos" onclick="openFolder('photos')">
+    <h2>Photos</h2>
+  </div>
 
-videos.forEach(v=>{
-  document.getElementById('videos').innerHTML += `
-  <video controls>
-    <source src="videos/${v}" type="video/mp4">
-  </video>`;
-});
+  <div class="card videos" onclick="openFolder('videos')">
+    <h2>Videos</h2>
+  </div>
+</div>
 
-activities.forEach(a=>{
-  document.getElementById('activities').innerHTML += <img src="activities/${a}">;
-});
-</script>
+<div id="gallery" class="gallery"></div>
 
+<script src="data.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-  
