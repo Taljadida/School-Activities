@@ -1,17 +1,18 @@
-
+const data = {
   photos: [
-    // حطي أسماء الصور هنا لاحقًا
+    "photos/photo1.jpg",
+    "photos/photo2.jpg"
   ],
   videos: [
-    // حطي أسماء الفيديوهات هنا لاحقًا
+    "videos/video1.mp4"
   ],
   activities: [
-    // حطي صور النشاطات هنا لاحقًا
+    "activities/activity1.jpg"
   ],
   events: [
-    // حطي صور الاحتفالات هنا لاحقًا
+    "events/event1.jpg"
   ],
   awards: [
-    // حطي صور الجوائز هنا لاحقًا
+    "awards/award1.jpg"
   ]
 };
