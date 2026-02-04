@@ -5,6 +5,7 @@ const data = {
   ],
   videos: [
     "videos/راجع يتعمر لبنان.mp4"
+    "videos/لغتي العربية.mp4"
   ],
   activities: [
     "activities/activity1.jpg"
