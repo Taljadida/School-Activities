@@ -1,18 +1,17 @@
-const data = {
-  activities: [
-    "activities/activity1.jpg"
-  ],
-  events: [
-    "events/event1.jpg"
-  ],
-  awards: [
-    "awards/award1.jpg"
-  ],
+
   photos: [
-   "photos/photo1.jpg",
-    "photos/photo 1.jfif"
+    // حطي أسماء الصور هنا لاحقًا
   ],
   videos: [
-    "videos/video1.mp4"
+    // حطي أسماء الفيديوهات هنا لاحقًا
+  ],
+  activities: [
+    // حطي صور النشاطات هنا لاحقًا
+  ],
+  events: [
+    // حطي صور الاحتفالات هنا لاحقًا
+  ],
+  awards: [
+    // حطي صور الجوائز هنا لاحقًا
   ]
 };
