@@ -9,8 +9,7 @@ const data = {
     "awards/award1.jpg"
   ],
   photos: [
-    "photos/photo1.jpg",
-   photos/photo 1.jfif
+    "photos/photo 1.jfif"
   ],
   videos: [
     "videos/video1.mp4"
