@@ -4,7 +4,7 @@ const data = {
     "photos/photo 1.jfif"
   ],
   videos: [
-    "videos/video1.mp4"
+    "videos/راجع يتعمر لبنان.mp4"
   ],
   activities: [
     "activities/activity1.jpg"
