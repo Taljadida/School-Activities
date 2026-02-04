@@ -32,7 +32,11 @@ h1 {
   box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
   transition: transform 0.2s, box-shadow 0.2s; 
 }
-
+.folder.photos { background-color: #4caf50; }     /* أخضر */
+.folder.videos { background-color: #2196f3; }     /* أزرق */
+.folder.activities { background-color: #ff9800; } /* برتقالي */
+.folder.events { background-color: #9c27b0; }     /* بنفسجي */
+.folder.awards { background-color: #f44336; }     /* أحمر */
 .folder:hover { 
   transform: scale(1.05); 
   box-shadow: 0 6px 10px rgba(0,0,0,0.3); 
