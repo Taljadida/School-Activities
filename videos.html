@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+</head>
+<body>
+<h1>Videos</h1>
+<div id="gallery"></div>
+<a href="index.html" class="back-button">Back</a>
+
+<script>
+const gallery = document.getElementById("gallery");
+data.videos.forEach(file => {
+  const video = document.createElement("video");
+  video.src = file;
+  video.controls = true;
+  gallery.appendChild(video);
+});
+</script>
+</body>
+</html>
