@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html lang="ar">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8" />
-  <title>School Activities</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Activities</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>School Activities Gallery</h1>
-
-<div class="grid">
-  <div class="card activities" onclick="openFolder('activities')">
-    <h2>Activities</h2>
-  </div>
-
-  <div class="card events" onclick="openFolder('events')">
-    <h2>Celebrations</h2>
-  </div>
-
-  <div class="card awards" onclick="openFolder('awards')">
-    <h2>Awards</h2>
-  </div>
-
-  <div class="card photos" onclick="openFolder('photos')">
-    <h2>Photos</h2>
-  </div>
-
-  <div class="card videos" onclick="openFolder('videos')">
-    <h2>Videos</h2>
-  </div>
+<h1>School Activities</h1>
+<div class="folders-container">
+  <a href="photos.html" class="folder photos">Photos</a>
+  <a href="videos.html" class="folder videos">Videos</a>
+  <a href="activities.html" class="folder activities">Activities</a>
+  <a href="events.html" class="folder events">Events</a>
+  <a href="awards.html" class="folder awards">Awards</a>
 </div>
-
-<div id="gallery" class="gallery"></div>
-
-<script src="data.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
