@@ -5,6 +5,7 @@ const data = {
   ],
   videos: [
     "videos/Video6.mp4",
+    "videos/video2.mp4"
     
   ],
   activities: [
