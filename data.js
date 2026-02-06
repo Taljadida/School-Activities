@@ -1,12 +1,11 @@
 const data = {
   photos: [
     "photos/photo1.jfif",
-    ""
+    
   ],
   videos: [
     "videos/Video6.mp4",
-    ",
-    ""
+    
   ],
   activities: [
     "activities/activity1.jpg"
