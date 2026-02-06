@@ -13,7 +13,7 @@ const data = {
   events: [
     "events/video1.mp4",
     "events/video5.mp4",
-    "events/video3.mp4"
+    "events/video3.mp4",
   ],
   awards: [
     "awards/photo2.jpeg",
