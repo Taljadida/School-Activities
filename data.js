@@ -1,6 +1,6 @@
 const data = {
   photos: [
-    "",
+    "photos/photo1.jfif",
     ""
   ],
   videos: [
