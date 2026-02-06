@@ -15,6 +15,7 @@ const data = {
     "events/event1.jpg"
   ],
   awards: [
-    "awards/photo2.jpeg"
+    "awards/photo2.jpeg",
+    "awards/photo3.jpeg"
   ]
 };
