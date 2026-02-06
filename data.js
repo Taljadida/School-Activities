@@ -4,8 +4,8 @@ const data = {
     "photos/photo1.jfif"
   ],
   videos: [
-    "videos/راجع يتعمر لبنان.mp4"
-    "videos/لغتي العربية.mp4"
+    ""
+    "videos/video1.mp4"
   ],
   activities: [
     "activities/activity1.jpg"
