@@ -12,7 +12,7 @@ const data = {
     "activities/activity1.jpg"
   ],
   events: [
-    "events/event1.jpg"
+    "events/video1.mp4"
   ],
   awards: [
     "awards/photo2.jpeg",
