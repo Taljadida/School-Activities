@@ -4,7 +4,7 @@ const data = {
     "photos/photo1.jfif"
   ],
   videos: [
-    ""
+    "videos/video2.mp4"
     "videos/video1.mp4"
   ],
   activities: [
