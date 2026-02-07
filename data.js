@@ -1,11 +1,11 @@
 const data = {
   photos: [
     "photos/photo1.jfif",
- "photos/photo4.jfif",
- "photos/photo6.jfif",
- "photos/photo7.jfif",
- "photos/photo8.jfif",
- "photos/photo9.jfif",
+ "photos/photo4.jpeg",
+ "photos/photo6.jpeg",
+ "photos/photo7.jpeg",
+ "photos/photo8.jpeg",
+ "photos/photo9.jpeg",
     
   ],
   videos: [
