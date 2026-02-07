@@ -14,11 +14,20 @@
 
 <script>
 const gallery = document.getElementById("gallery");
+
 data.events.forEach(file => {
-  const img = document.createElement("img");
-  img.src = file;
-  img.controls = true;
-  gallery.appendChild(img);
+  // Check if the file is a video by looking at the extension
+  if (file.toLowerCase().endsWith(".mp4")) {
+    const video = document.createElement("video");
+    video.src = file;
+    video.controls = true;
+    gallery.appendChild(video);
+  } else {
+    // If it's not an mp4, assume it's an image (jpg, png, jfif, etc.)
+    const img = document.createElement("img");
+    img.src = file;
+    gallery.appendChild(img);
+  }
 });
 </script>
 </body>
