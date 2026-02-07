@@ -17,6 +17,7 @@ const gallery = document.getElementById("gallery");
 data.events.forEach(file => {
   const img = document.createElement("img");
   img.src = file;
+  img.controls = true;
   gallery.appendChild(img);
 });
 </script>
