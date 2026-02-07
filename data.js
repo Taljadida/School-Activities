@@ -12,9 +12,9 @@ const data = {
     "activities/activity1.jpg"
   ],
   events: [
-    "events/video1.mp4",
-    "events/video5.mp4",
-    "events/video3.mp4",
+    "events/Video1.mp4",
+    "events/Video5.mp4",
+    "events/Video3.mp4",
   ],
   awards: [
     "awards/photo2.jpeg",
